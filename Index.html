@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Source/CSS/style.css">
+    <link rel="stylesheet" href="Source/CSS/Adaptive.css">
+    <script src="Source/JS/scriptHNS.js"></script>
+    <script src="Source/JS/scriptLTC.js"></script>
+    <script src="Source/JS/scriptMONA.js"></script>
+    <script src="Source/JS/scriptEMC2.JS"></script>
+    <script src="Source/JS/scriptBEAM.js"></script>
+    <script src="Source/JS/scriptBCH.js"></script>
+    <script src="Source/JS/scriptBSV.js"></script>
+    <script src="Source/JS/scriptZEN.js"></script>
+    <script src="Source/JS/scriptBTG.js"></script>
+    <script src="Source/JS/scriptBTC.js"></script>
+    <script src="Source/JS/scriptBCD.js"></script>
+    <script src="Source/JS/scriptRVN.js"></script>
+    <script src="Source/JS/scriptXCH.js"></script>
+    <title>AllHalving</title>
+</head>
+<body class="body">
+    <header class="header"><div class="header__cnt">Crypto halving timer:</div></header>
+<div class="wrapper">
+<div class="container"> 
+    <div class="countdownHNS">
+        <img src="Source/Images/HNS.png" alt="HNS" class="img">
+        <p class="nameTkn">[HNS] Handshake</p>
+        <div class="time-section">
+            <span class="count" id="daysHNS"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursHNS"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesHNS"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsHNS"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+    <div class="countdownLTC">
+        <img src="Source/Images/LTC.png" alt="LTC" class="img">
+        <p class="nameTkn">[LTC] Litecoin</p>
+        <div class="time-section">
+            <span class="count" id="daysLTC"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursLTC"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesLTC"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsLTC"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+    <div class="countdownMONA">
+        <img src="Source/Images/MONA.png" alt="MONA" class="img">
+        <p class="nameTkn">[MONA] MonaCoin</p>
+        <div class="time-section">
+            <span class="count" id="daysMONA"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursMONA"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesMONA"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsMONA"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+    <div class="countdownEMC2">
+        <img src="Source/Images/EMC2.png" alt="EMC2" class="img">
+        <p class="nameTkn">[EMC2] Einsteinium</p>
+        <div class="time-section">
+            <span class="count" id="daysEMC2"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursEMC2"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesEMC2"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsEMC2"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+    <div class="countdownBEAM">
+        <img src="Source/Images/BEAM.png" alt="BEAM" class="img">
+        <p class="nameTkn">[BEAM] Beam</p>
+        <div class="time-section">
+            <span class="count" id="daysBEAM"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursBEAM"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesBEAM"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsBEAM"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+    <div class="countdownBCH">
+        <img src="Source/Images/BCH.png" alt="BCH" class="img">
+        <p class="nameTkn">[BCH] Bitcoin Cash</p>
+        <div class="time-section">
+            <span class="count" id="daysBCH"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursBCH"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesBCH"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsBCH"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+    <div class="countdownBSV">
+        <img src="Source/Images/BSV.png" alt="BSV" class="img">
+        <p class="nameTkn">[BSV] Bitcoin SV</p>
+        <div class="time-section">
+            <span class="count" id="daysBSV"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursBSV"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesBSV"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsBSV"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+    <div class="countdownZEN">
+        <img src="Source/Images/ZEN.png" alt="ZEN" class="img">
+        <p class="nameTkn">[ZEN] Horizen</p>
+        <div class="time-section">
+            <span class="count" id="daysZEN"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursZEN"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesZEN"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsZEN"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+    <div class="countdownBTG">
+        <img src="Source/Images/BTG.png" alt="BTG" class="img">
+        <p class="nameTkn">[BTG] Bitcoin Gold</p>
+        <div class="time-section">
+            <span class="count" id="daysBTG"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursBTG"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesBTG"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsBTG"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+    <div class="countdownXCH">
+        <img src="Source/Images/XCH.png" alt="XCH" class="img">
+        <p class="nameTkn">[XCH] Chia</p>
+        <div class="time-section">
+            <span class="count" id="daysXCH"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursXCH"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesXCH"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsXCH"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+    <div class="countdownBTC">
+        <img src="Source/Images/BTC.png" alt="BTC" class="img">
+        <p class="nameTkn">[BTC] Bitcoin</p>
+        <div class="time-section">
+            <span class="count" id="daysBTC"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursBTC"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesBTC"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsBTC"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+    <div class="countdownBCD">
+        <img src="Source/Images/BCD.png" alt="BCD" class="img">
+        <p class="nameTkn">[BCD] Bitcoin Diamond</p>
+        <div class="time-section">
+            <span class="count" id="daysBCD"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursBCD"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesBCD"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsBCD"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+
+    <div class="countdownRVN">
+        <img src="Source/Images/RVN.png" alt="RVN" class="img">
+        <p class="nameTkn">[RVN] Ravencoin</p>
+        <div class="time-section">
+            <span class="count" id="daysRVN"></span>
+            <span class="units">Days</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="hoursRVN"></span>
+            <span class="units">Hours</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="minutesRVN"></span>
+            <span class="units">Minutes</span>
+        </div>
+        <div class="time-section">
+            <span class="count" id="secondsRVN"></span>
+            <span class="units">Seconds</span>
+        </div>
+    </div>
+
+    
+</div>  
+</div> 
+</body>
+</html>
